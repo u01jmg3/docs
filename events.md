@@ -21,7 +21,7 @@
 
 Laravel's events provide a simple observer pattern implementation, allowing you to subscribe and listen for various events that occur within your application. Event classes are typically stored in the `app/Events` directory, while their listeners are stored in `app/Listeners`. Don't worry if you don't see these directories in your application as they will be created for you as you generate events and listeners using Artisan console commands.
 
-Events serve as a great way to decouple various aspects of your application, since a single event can have multiple listeners that do not depend on each other. For example, you may wish to send a Slack notification to your user each time an order has shipped. Instead of coupling your order processing code to your Slack notification code, you can raise an `App\Events\OrderShipped` event which a listener can receive and use to dispatch a Slack notification.
+Events serve as a great way to decouple various aspects of your application since a single event can have multiple listeners that do not depend on each other. For example, you may wish to send a Slack notification to your user each time an order has shipped. Instead of coupling your order processing code to your Slack notification code, you can raise an `App\Events\OrderShipped` event which a listener can receive and use to dispatch a Slack notification.
 
 <a name="registering-events-and-listeners"></a>
 ## Registering Events & Listeners
@@ -155,7 +155,7 @@ Laravel finds event listeners by scanning the listener classes using PHP's refle
         }
     }
 
-Event discovery is disabled by default, but you can enable it by overriding the `shouldDiscoverEvents` method of your application's `EventServiceProvider`:
+Event discovery is disabled by default but you can enable it by overriding the `shouldDiscoverEvents` method of your application's `EventServiceProvider`:
 
     /**
      * Determine if events and listeners should be automatically discovered.

@@ -143,7 +143,7 @@ To replace the placeholders when retrieving a translation string, you may pass a
 
     echo __('messages.welcome', ['name' => 'dayle']);
 
-If your placeholder contains all capital letters, or only has its first letter capitalized, the translated value will be capitalized accordingly:
+If your placeholder contains all capital letters or only has its first letter capitalized, the translated value will be capitalized accordingly:
 
     'welcome' => 'Welcome, :NAME', // Welcome, DAYLE
     'goodbye' => 'Goodbye, :Name', // Goodbye, Dayle

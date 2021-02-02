@@ -33,7 +33,7 @@ If you are developing with a team, you may wish to continue including a `.env.ex
 <a name="environment-file-security"></a>
 #### Environment File Security
 
-Your `.env` file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
+Your `.env` file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository since any sensitive credentials would get exposed.
 
 <a name="environment-variable-types"></a>
 ### Environment Variable Types

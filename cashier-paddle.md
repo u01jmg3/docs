@@ -835,7 +835,7 @@ If you would like to offer trial periods without collecting the user's payment m
         'trial_ends_at' => now()->addDays(10)
     ]);
 
-Cashier refers to this type of trial as a "generic trial", since it is not attached to any existing subscription. The `onTrial` method on the `User` instance will return `true` if the current date is not past the value of `trial_ends_at`:
+Cashier refers to this type of trial as a "generic trial" since it is not attached to any existing subscription. The `onTrial` method on the `User` instance will return `true` if the current date is not past the value of `trial_ends_at`:
 
     if ($user->onTrial()) {
         // User is within their trial period...

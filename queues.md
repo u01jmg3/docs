@@ -67,7 +67,7 @@ Note that each connection configuration example in the `queue` configuration fil
     // This job is sent to the default connection's "emails" queue...
     ProcessPodcast::dispatch()->onQueue('emails');
 
-Some applications may not need to ever push jobs onto multiple queues, instead preferring to have one simple queue. However, pushing jobs to multiple queues can be especially useful for applications that wish to prioritize or segment how jobs are processed, since the Laravel queue worker allows you to specify which queues it should process by priority. For example, if you push jobs to a `high` queue, you may run a worker that gives them higher processing priority:
+Some applications may not need to ever push jobs onto multiple queues, instead preferring to have one simple queue. However, pushing jobs to multiple queues can be especially useful for applications that wish to prioritize or segment how jobs are processed since the Laravel queue worker allows you to specify which queues it should process by priority. For example, if you push jobs to a `high` queue, you may run a worker that gives them higher processing priority:
 
     php artisan queue:work --queue=high,default
 
@@ -1410,7 +1410,7 @@ The `queue:work` Artisan command exposes a `--timeout` option. If a job is proce
 php artisan queue:work --timeout=60
 ```
 
-The `retry_after` configuration option and the `--timeout` CLI option are different, but work together to ensure that jobs are not lost and that jobs are only successfully processed once.
+The `retry_after` configuration option and the `--timeout` CLI option are different but work together to ensure that jobs are not lost and that jobs are only successfully processed once.
 
 > {note} The `--timeout` value should always be at least several seconds shorter than your `retry_after` configuration value. This will ensure that a worker processing a frozen job is always terminated before the job is retried. If your `--timeout` option is longer than your `retry_after` configuration value, your jobs may be processed twice.
 

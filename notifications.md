@@ -511,7 +511,7 @@ When designing a mail notification template, it is convenient to quickly preview
 <a name="markdown-mail-notifications"></a>
 ## Markdown Mail Notifications
 
-Markdown mail notifications allow you to take advantage of the pre-built templates of mail notifications, while giving you more freedom to write longer, customized messages. Since the messages are written in Markdown, Laravel is able to render beautiful, responsive HTML templates for the messages while also automatically generating a plain-text counterpart.
+Markdown mail notifications allow you to take advantage of the pre-built templates of mail notifications while giving you more freedom to write longer, customized messages. Since the messages are written in Markdown, Laravel is able to render beautiful, responsive HTML templates for the messages while also automatically generating a plain-text counterpart.
 
 <a name="generating-the-message"></a>
 ### Generating The Message

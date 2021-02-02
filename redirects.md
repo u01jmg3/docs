@@ -8,7 +8,7 @@
 <a name="creating-redirects"></a>
 ## Creating Redirects
 
-Redirect responses are instances of the `Illuminate\Http\RedirectResponse` class, and contain the proper headers needed to redirect the user to another URL. There are several ways to generate a `RedirectResponse` instance. The simplest method is to use the global `redirect` helper:
+Redirect responses are instances of the `Illuminate\Http\RedirectResponse` class and contain the proper headers needed to redirect the user to another URL. There are several ways to generate a `RedirectResponse` instance. The simplest method is to use the global `redirect` helper:
 
     Route::get('/dashboard', function () {
         return redirect('/home/dashboard');

@@ -712,7 +712,7 @@ You may pass multiple arguments to the `groupBy` method to group by multiple col
                     ->having('account_id', '>', 100)
                     ->get();
 
-To build more advanced `having` statements, see the [`havingRaw`](#raw-methods) method.
+To build more advanced `having` statements see the [`havingRaw`](#raw-methods) method.
 
 <a name="limit-and-offset"></a>
 ### Limit & Offset

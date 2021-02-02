@@ -2454,7 +2454,7 @@ The `unless` method will execute the given callback unless the first argument gi
 
     // [1, 2, 3, 5]
 
-For the inverse of `unless`, see the [`when`](#method-when) method.
+For the inverse of `unless` see the [`when`](#method-when) method.
 
 <a name="method-unlessempty"></a>
 #### `unlessEmpty()` {#collection-method}
@@ -2523,7 +2523,7 @@ The `when` method will execute the given callback when the first argument given 
 
     // [1, 2, 3, 4]
 
-For the inverse of `when`, see the [`unless`](#method-unless) method.
+For the inverse of `when` see the [`unless`](#method-unless) method.
 
 <a name="method-whenempty"></a>
 #### `whenEmpty()` {#collection-method}

@@ -136,7 +136,7 @@ As mentioned, you will typically be interacting with the container within servic
         // ...
     });
 
-> {tip} There is no need to bind classes into the container if they do not depend on any interfaces. The container does not need to be instructed on how to build these objects, since it can automatically resolve these objects using reflection.
+> {tip} There is no need to bind classes into the container if they do not depend on any interfaces. The container does not need to be instructed on how to build these objects since it can automatically resolve these objects using reflection.
 
 <a name="binding-a-singleton"></a>
 #### Binding A Singleton
@@ -213,7 +213,7 @@ Sometimes you may have two classes that utilize the same interface, but you wish
 <a name="binding-primitives"></a>
 ### Binding Primitives
 
-Sometimes you may have a class that receives some injected classes, but also needs an injected primitive value such as an integer. You may easily use contextual binding to inject any value your class may need:
+Sometimes you may have a class that receives some injected classes but also needs an injected primitive value such as an integer. You may easily use contextual binding to inject any value your class may need:
 
     $this->app->when('App\Http\Controllers\UserController')
               ->needs('$variableName')
